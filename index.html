@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="css/grid.css">-->
+        
+    <title>Contador de Dias</title>
+</head>
+<body>
+    <section class="row">
+        <div class="top">
+            <div class="counter">
+                <div class="counter__title">Days Counter</div>
+                <div class="counter__title">
+                    Days calculated in <span id="monthday" class="counter__title--month"></span>
+                </div>
+                <div class="counter__value">90 Days</div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <input type="date" class="add__date-one" id="dataDois" onchange="chamar()">
+                    <input type="date" class="add__date-two" id="dataUm" onchange="chamar()"/>
+                    <input type="text" class="add__result" id="numeroDias" name="numdays"/>
+                    <button class="add__check" onclick="calcular()"><i class="ion-ios-checkmark-outline"></i></button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="dates">
+                <h2 class="date__title">Dates</h2>
+                
+                <div id="result"class="dates__list">
+                                     
+                    <div class="item clearfix" id="income-0">
+                        <div id="firstdate" class="item__description">26/01/2020</div>
+                        <div class="item__description"> - </div>
+                        <div id="seconddate" class="item__description">26/04/2020</div>
+                        <div class="middle clearfix">
+                            <div id="resultdays" class="item__value">90 Days</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>  
+    <script src="script.js"></script>     
+</body>
+</html>
