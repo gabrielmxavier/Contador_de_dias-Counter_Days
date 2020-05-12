@@ -22,115 +22,29 @@ function date() {
 
 
 function difDias(){
-    
-   //instantaneos do objeto Date
+   
    var dataUm = new Date(document.getElementById("dataUm").value);
    var dataDois = new Date(document.getElementById("dataDois").value);
-   return parseInt((dataUm - dataDois) / (24 * 3600 * 1000));
+   return parseInt((dataUm - dataDois) / (24 * 3600 * 1000) + 1);
     
 }
  
 function chamar(){
-   document.getElementById("numeroDias").value = difDias() + 1;;  
+   document.getElementById("numeroDias").value = difDias();  
 }
 
 
-
-
-// DATE CONTROLLER
-var dateController = (function() {
-  
-})();
-
-
-
-// UI CONTROLLER
-var UIController = (function() {
-
-   var DOMstrings = {
-      inputDateOne: '.add__date-one',
-      inputDateTwo: '.add__date-two',
-      inputResult: '.add__result',
-      inputBtn: '.add__check',
-   }
-
-   return {
-      getInput: function() {
-
-         return {
-            dateOne: document.querySelector(DOMstrings.inputDateOne).value,
-            dateTwo: document.querySelector(DOMstrings.inputDateTwo).value,
-            resultDate: document.querySelector(DOMstrings.inputResult).value,
-         };
-         
-      },
-
-      addListItem: function() {
-         
-
-                  
-
-
-      },
-      
-      getDOMstrings: function() {
-         return DOMstrings;
-      }
-
-   };
-  
-
-})();
-
-
-// GLOBAL CALCULATOR CONTROLLER
-var controller = (function(dateCtrl, UIctrl) {
-
-   var setupEventListeners = function() {
-
-      var DOM = UIctrl.getDOMstrings();
-
-      document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
-
-      document.addEventListener('keypress', function(enter) {
-      
-         if(enter.keyCode === 13 || enter.which === 13) {
-            ctrlAddItem();    
-         }
-         
-      
-      });
-   };
-
-
-   var ctrlAddItem = function() {
-      var input, newItem;
-      
-      // 1. GET THE DATES IN THE INPUT.
-      input = UIctrl.getInput();
-      
-
-      // 2. ADD THE DATES TO THE DATE CONTROLLER.
-      
-      // 3. ADD THE ITEM TO THE UI
-
-
-      // 4. CALCULATE THE TOTAL OF DAYS
-
-
-      // 5. DISPLAY THE TOTAL ON THE UI
+document.querySelector('.add__check').addEventListener('click', function() {
    
-      
+
+   var dataUm = new Date(document.getElementById("dataUm").value).toLocaleDateString();
+   var dataDois = new Date(document.getElementById("dataDois").value).toLocaleDateString();
+
+
+   if (true) {
+       document.getElementById('firstdate').innerHTML += dataDois + '</br>';
+       document.getElementById('seconddate').innerHTML += dataUm + '</br>';
+       document.getElementById('sinal').innerHTML += '-' + '</br>';
+       document.getElementById('resultdays').innerHTML += difDias() + ' Days' + '</br>';
    }
-
-   // INITIALIZATION FUNCTION
-   return {
-      init: function() {
-         console.log('Application is running');
-         setupEventListeners();
-      }
-   };
-
-})(dateController, UIController);
-
-controller.init();
+})
