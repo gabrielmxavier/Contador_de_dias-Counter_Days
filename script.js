@@ -30,16 +30,33 @@ function difDias(){
 }
  
 function chamar(){
-   document.getElementById("numeroDias").value = difDias();  
+   document.getElementById("numeroDias").value = difDias();
+}
+
+var resultado = document.getElementsByName('valor[]');
+var total = 0;
+var n = 0;
+var dias = [];
+
+function somaDias() {
+    
+   var dataUm = new Date(document.querySelector('.add__date-two').value);
+   var dataDois = new Date(document.querySelector('.add__date-one').value);
+   var resultado = parseInt(((dataUm - dataDois) / (60 * 60 * 24 * 1000)) + 1);
+
+   dias.push(resultado)
+   total = total + dias[n]
+   n++
+
+   document.getElementById('total').innerHTML = total + ' Days';
 }
 
 
+
 document.querySelector('.add__check').addEventListener('click', function() {
-   
 
    var dataUm = new Date(document.getElementById("dataUm").value).toLocaleDateString();
    var dataDois = new Date(document.getElementById("dataDois").value).toLocaleDateString();
-
 
    if (true) {
        document.getElementById('firstdate').innerHTML += dataDois + '</br>';

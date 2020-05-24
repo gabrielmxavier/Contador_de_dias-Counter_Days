@@ -30,7 +30,7 @@ section {
   
 .top {
     height: 40vh;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(bridge.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.39)), url(bridge.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -46,14 +46,15 @@ section {
 }
   
 .counter__title {
-    font-size: 18px;
     text-align: center;
-    margin-bottom: 10px;
-    font-weight: 300;
+    font-size: 21px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 500;
 }
   
 .counter__value {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 46px;
     text-align: center;
     margin-bottom: 25px;
