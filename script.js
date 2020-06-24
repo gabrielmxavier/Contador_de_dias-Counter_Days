@@ -68,8 +68,11 @@ document.querySelector('.add__check').addEventListener('click', function() {
    var month1 = inputValue1.getUTCMonth() + 1;
    var year1 = inputValue1.getFullYear();
 
-   if (day1 < 10 && month1 < 10) {
+   if (day1 < 10 ) {
       day1 = '0' + day1;
+   }
+
+   if (month1 < 10) {
       month1 = '0' + month1;
    }
 
@@ -77,8 +80,11 @@ document.querySelector('.add__check').addEventListener('click', function() {
    var month2 = inputValue2.getUTCMonth() + 1;
    var year2 = inputValue2.getFullYear();
 
-   if (day2 < 10 && month2 < 10) {
+   if (day2 < 10 ) {
       day2 = '0' + day2;
+   }
+
+   if (month2 < 10) {
       month2 = '0' + month2;
    }
 
