@@ -1,13 +1,19 @@
 # Contador_de_dias-Counter_Days
 
-JavaScript counter days.
-
 Contador de dias em JavaScript.
 
-## Porque da criação dessa ferramenta
+JavaScript counter days.
 
-Ferramenta criada para contagem dos dias embarcados de Marítimos, por isso no intervalo de 1 dia são contabilizado 2 dias e não apenas 1.
+## Teste o contador / Try the counter days
 
-## Screen-Shot do projeto
+[Counter Days](https://gabrielmxavier.github.io/Contador_de_dias-Counter_Days/)
 
-![Contador de dias](https://github.com/gabrielmxavier/Contador_de_dias-Counter_Days/blob/master/Screen-shot.jpg)
+## Porque da criação dessa ferramenta / Why this Tool
+
+Ferramenta criada para as pessoas que trabalham embarcadas possam contar os dias trabalhados, por isso que no intervalo de 1 dia entre 2 datas são contabilizado 2 dias e não apenas 1.
+
+This Tool was created for people who works onboard to count their days worked, that's why in the interval of 1 day between 2 dates was set to 2 days counted and not just 1.
+
+## Screen-Shot do projeto / Project overview
+
+![Contador de dias](https://github.com/gabrielmxavier/Contador_de_dias-Counter_Days/blob/master/Print-Screen.jpg)
