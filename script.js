@@ -1,3 +1,5 @@
+/****** ATUALIZA O DIA DO WEBSITE *******/
+
 function date() {
 
     var now = new Date();
@@ -18,8 +20,6 @@ function date() {
  
  /******* função que recupera os valores dos inputs tipo date e
  calcula a diferença entre eles. *******/
- 
-
 
 function difDias(){
    
@@ -29,6 +29,10 @@ function difDias(){
     
 }
  
+
+
+/******** APRESENTA O RESULTADO DA DIFERENÇA DAS DATAS ********/
+
 function chamar(){
    document.getElementById("numeroDias").value = difDias();
 }
@@ -55,13 +59,34 @@ function somaDias() {
 
 document.querySelector('.add__check').addEventListener('click', function() {
 
-   var dataUm = new Date(document.getElementById("dataUm").value).toLocaleDateString();
-   var dataDois = new Date(document.getElementById("dataDois").value).toLocaleDateString();
+   var inputValue1 = new Date(document.getElementById('dataUm').value);
+
+   var inputValue2 = new Date(document.getElementById('dataDois').value);
+   console.log(typeof inputValue1);
+
+   var day1 = inputValue1.getUTCDate();
+   var month1 = inputValue1.getUTCMonth() + 1;
+   var year1 = inputValue1.getFullYear();
+
+   if (day1 < 10 && month1 < 10) {
+      day1 = '0' + day1;
+      month1 = '0' + month1;
+   }
+
+   var day2 = inputValue2.getUTCDate();
+   var month2 = inputValue2.getUTCMonth() + 1;
+   var year2 = inputValue2.getFullYear();
+
+   if (day2 < 10 && month2 < 10) {
+      day2 = '0' + day2;
+      month2 = '0' + month2;
+   }
 
    if (true) {
-       document.getElementById('firstdate').innerHTML += dataDois + '</br>';
-       document.getElementById('seconddate').innerHTML += dataUm + '</br>';
+       document.getElementById('firstdate').innerHTML += day2 + '/' + month2 + '/' + year2 + '</br>';
+       document.getElementById('seconddate').innerHTML += day1 + '/' + month1 + '/' + year1 + '</br>';
        document.getElementById('sinal').innerHTML += '-' + '</br>';
        document.getElementById('resultdays').innerHTML += difDias() + ' Days' + '</br>';
    }
+
 })
