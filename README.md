@@ -6,7 +6,7 @@ Contador de dias em JavaScript.
 
 ## Porque da criação dessa ferramenta
 
-Ferramenta criada para contagem dos dias embarcados de Marítimos, por isso no intervalo de 1 dia são contabilizado 2 dias e não apenas 1.
+Ferramenta criada para as pessoas que trabalham embarcadas possam contar os dias trabalhados, por isso que no intervalo de 1 dia entre 2 datas são contabilizado 2 dias e não apenas 1.
 
 ## Screen-Shot do projeto
 
