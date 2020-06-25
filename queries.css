@@ -1,0 +1,73 @@
+
+/* MOBILE */
+@media only screen and (max-width: 366px) {
+    
+    .container.clearfix {
+        width: auto;
+    }
+
+    .top {
+        height: 40vh;
+        width: auto;
+    }
+
+    .dates {
+        width: auto;
+    }
+
+    .counter__title {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .container.clearfix {
+        width: auto;
+    }
+
+    .dates {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    /*
+    .item.clearfix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    */
+
+    .counter__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .date__title {
+        font-size: 25px;
+    }
+
+    #sinal.item__description {
+        font-size: 10px;
+    }
+
+    #firstdate.item__description {
+        font-size: 14px;
+    }
+
+    #seconddate.item__description {
+        font-size: 14px;
+    }
+
+    #resultdays.item__value {
+        font-size: 14px;
+    }
+
+}
