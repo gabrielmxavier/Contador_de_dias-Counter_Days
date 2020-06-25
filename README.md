@@ -4,7 +4,7 @@ Contador de dias em JavaScript.
 
 JavaScript counter days.
 
-## Teste o contador / Try the counter days
+## Teste o contador de dias / Try the counter days
 
 [Counter Days](https://gabrielmxavier.github.io/Contador_de_dias-Counter_Days/)
 
